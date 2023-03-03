@@ -47,3 +47,47 @@ UserService
 UserService
 к классу
 UserDaoImpl
+### Подсказки
+Для проверок в
+UserDaoTest
+используйте методы
+assertNull(), assertNotNull() и assertEquals().
+Для проверок в
+UserServiceTest
+используйте метод
+when()
+В конструкторе класса
+UserServiceTest
+используйте метод
+MockitoAnnotations.initMocks(this);
+используйте в pom.xml следующие зависимости:
+
+    <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.12</version>
+        <scope>test</scope>
+    </dependency>
+    <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.12</version>
+    </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.8.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>2.21.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-junit-jupiter</artifactId>
+            <version>2.23.0</version>
+            <scope>test</scope>
+    </dependency>
